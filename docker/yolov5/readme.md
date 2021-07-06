@@ -47,7 +47,7 @@ If you are on Linux, you can run this command to run on **GPU** (much faster inf
 docker run --rm -it --gpus all -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
 ```
 
-## Mac
+## Mac M1
 If you are on Mac with Docker Desktop for Apple silicon, you can run this command to run on **CPU**:
 ```bash
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0-m1 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
