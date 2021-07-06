@@ -1,0 +1,3 @@
+docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
+
+docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_output/:/usr/src/app/inference/ mstephano/yolov5_deepsort:v5.0 /bin/bash -c "python track.py --source ./videos/ --yolo_weights ./videos/yolov5s.pt --save-vid"

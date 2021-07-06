@@ -242,3 +242,8 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# https://github.com/mstephano/yolov5
+!test.avi
+yolov5_output/
+deepsort_output/
