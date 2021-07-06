@@ -30,25 +30,25 @@ cd yolov5/docker
 ```
 
 ## Windows
-If you are on Windows, currently it is only possible to run inference on **CPU** using a docker container.
+If you are on Windows, currently it is only possible to run inference on **CPU** using a docker container:
 ```bash
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_output/:/usr/src/app/inference/ mstephano/yolov5_deepsort:v5.0 /bin/bash -c "python track.py --source ./videos/ --yolo_weights ./videos/yolov5s.pt --save-vid"
 ```
 **NOTE** In order to run on GPU using a docker container on Windows, you must follow this guide: https://docs.nvidia.com/cuda/wsl-user-guide/index.html
 
 ## Linux
-If you are on Linux, you can run these command to run on **CPU**:
+If you are on Linux, you can run this command to run on **CPU**:
 ```bash
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_output/:/usr/src/app/inference/ mstephano/yolov5_deepsort:v5.0 /bin/bash -c "python track.py --source ./videos/ --yolo_weights ./videos/yolov5s.pt --save-vid"
 ```
 
-If you are on Linux, you can run these command to run on **GPU** (much faster inference):
+If you are on Linux, you can run this command to run on **GPU** (much faster inference):
 ```bash
 docker run --rm -it --gpus all -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_output/:/usr/src/app/inference/ mstephano/yolov5_deepsort:v5.0 /bin/bash -c "python track.py --source ./videos/ --yolo_weights ./videos/yolov5s.pt --save-vid"
 ```
 
 ## Mac
-If you are on Mac with Docker Desktop for Apple silicon, you can run these command to run on **CPU**:
+If you are on Mac with Docker Desktop for Apple silicon, you can run this command to run on **CPU**:
 ```bash
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_output/:/usr/src/app/inference/ mstephano/yolov5_deepsort:v5.0-m1 /bin/bash -c "python track.py --source ./videos/ --yolo_weights ./videos/yolov5s.pt --save-vid"
 ```
