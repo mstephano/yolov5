@@ -2,8 +2,6 @@
 
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/mstephano/yolov5">
 
-[[_TOC_]]
-
 This branch contains a folder named `docker/yolov5` which contains a Dockerfile to build a smaller image with Python and Yolov5.
 
 # Repositories Used

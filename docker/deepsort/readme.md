@@ -2,8 +2,6 @@
 
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/mstephano/yolov5">
 
-[[_TOC_]]
-
 This branch contains a folder named `docker/deepsort` which contains a Dockerfile to build an image with Python and DeepSort (object tracking) for Yolov5.
 
 # Repository
