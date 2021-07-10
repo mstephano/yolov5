@@ -63,8 +63,8 @@ docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_outp
 
 # User Guide
 - Every videos in folder `yolov5/docker/videos` will be processed
-- You can put your custom model in folder `yolov5/docker/videos` and use it in the command line by replacing `yolov5s.pt` by your custom model
-- Processed videos will be under folder `yolov5/docker/yolov5_output`
+- You can put your custom model in folder `yolov5/docker/videos` and use it in the command line by replacing `yolov5s.pt` by your custom model file
+- Processed videos will be in folder `yolov5/docker/yolov5_output`
 
 # Credits
 - Yolov5 : https://github.com/ultralytics/yolov5

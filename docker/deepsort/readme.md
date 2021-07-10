@@ -63,8 +63,8 @@ docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/deepsort_ou
 
 # User Guide
 - Every videos in folder `yolov5/docker/videos` will be processed
-- You can put your custom model in folder `yolov5/docker/videos` and use it in the command line by replacing `yolov5s.pt` by your custom model
-- Processed videos will be under folder `yolov5/docker/deepsort_output`
+- You can put your custom model in folder `yolov5/docker/videos` and use it in the command line by replacing `yolov5s.pt` by your custom model file
+- Processed videos will be in folder `yolov5/docker/deepsort_output`
 
 # Credits
 - DeepSort for Yolov5 : https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch
