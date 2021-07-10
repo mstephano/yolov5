@@ -16,7 +16,7 @@ This Dockerfile builds a smaller image (2.8 GB) than the original image from ult
 
 # Usage
 
-Run the below,
+Run the code below,
 
 ```bash
 # Windows/Linux amd64
