@@ -4,8 +4,11 @@
 
 This branch contains a folder named `docker/yolov5` which contains a Dockerfile to build a smaller image with Python and Yolov5.
 
-# Repositories Used
+# Repository Used
 - https://github.com/mstephano/yolov5
+
+# Docker Hub
+- https://hub.docker.com/repository/docker/mstephano/yolov5
 
 # Goal
 

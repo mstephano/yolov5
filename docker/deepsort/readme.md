@@ -7,6 +7,9 @@ This branch contains a folder named `docker/deepsort` which contains a Dockerfil
 # Repository
 - https://github.com/mstephano/yolov5
 
+# Docker Hub
+- https://hub.docker.com/repository/docker/mstephano/yolov5_deepsort
+
 # Goal
 
 This Dockerfile builds a smaller image (2.8 GB) than the original image from ultralytics/yolov5 (14.9 GB). This makes inference on CPU/GPU faster on the same video.
