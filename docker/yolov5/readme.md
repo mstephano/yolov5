@@ -6,6 +6,7 @@ This branch contains a folder named `docker/yolov5` which contains a Dockerfile 
 
 # Repository Used
 - https://github.com/mstephano/yolov5
+- Dockerfile: https://github.com/mstephano/yolov5/blob/master/docker/yolov5/Dockerfile
 
 # Docker Hub
 - https://hub.docker.com/repository/docker/mstephano/yolov5
