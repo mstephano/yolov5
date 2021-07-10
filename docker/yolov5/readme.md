@@ -46,7 +46,7 @@ If you are on Linux, you can run this command to run on **CPU**:
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
 ```
 
-If you are on Linux, you can run this command to run on **GPU** (much faster inference):
+If you are on Linux, you can run this command to run on **GPU** with NVIDIA graphic card (much faster inference):
 ```bash
 docker run --rm -it --gpus all -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
 ```
