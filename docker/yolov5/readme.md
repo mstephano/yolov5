@@ -19,10 +19,10 @@ This Dockerfile builds a smaller image (2.8 GB) than the original image from ult
 Run the code below,
 
 ```bash
-# Windows/Linux amd64
+# Windows/Linux/Mac-Intel amd64
 docker pull mstephano/yolov5:v5.0
 
-# Mac-M1/NVIDIA-Jetson arm64
+# Mac-M1/NVIDIA-Jetson AGX arm64
 docker pull mstephano/yolov5:v5.0-m1
 ```
 
@@ -50,8 +50,13 @@ If you are on Linux, you can run this command to run on **GPU** (much faster inf
 docker run --rm -it --gpus all -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
 ```
 
-## Mac M1
-If you are on Mac with Docker Desktop for Apple silicon, you can run this command to run on **CPU**:
+## Mac
+If you are on Mac with **Intel processor**, you can run this command to run on **CPU**:
+```bash
+docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
+```
+
+If you are on Mac with Docker Desktop for **Apple silicon M1 processor**, you can run this command to run on **CPU**:
 ```bash
 docker run --rm -it -v ${PWD}/videos/:/usr/src/app/videos/ -v ${PWD}/yolov5_output/:/usr/src/app/runs/ mstephano/yolov5:v5.0-m1 /bin/bash -c "python detect.py --source ./videos/ --weights ./videos/yolov5s.pt"
 ```
