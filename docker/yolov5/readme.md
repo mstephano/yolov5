@@ -2,7 +2,7 @@
 
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/mstephano/yolov5">
 
-This branch contains a folder named `docker/yolov5` which contains a Dockerfile to build a smaller image with Python and Yolov5.
+This fork contains a folder named `docker/yolov5` which contains a Dockerfile to build a smaller image with Python and Yolov5.
 
 # Repository Used
 - https://github.com/mstephano/yolov5
